@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101b2a">
+  <meta name="description" content="Trois séances de renforcement et deux échauffements guidés, simples à suivre sur téléphone.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101b2a'/%3E%3Cpath d='M14 40h36M20 30h24' stroke='%23c8ef69' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+  <title>Ma routine</title>
+  <link rel="stylesheet" href="style.css?v=20261011">
+  <link rel="stylesheet" href="media.css?v=20261011b">
+  <link rel="stylesheet" href="release.css?v=20261011">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><span class="brand-mark" aria-hidden="true">●</span><span>MA ROUTINE</span><span class="release-stamp">MàJ 11/10</span></header>
+    <section class="home" id="home">
+      <p class="eyebrow">PROCHAINE SÉANCE</p>
+      <div class="session-heading"><h1 id="sessionName">Séance A</h1><span class="session-index" id="sessionIndex">01 / 03</span></div>
+      <p class="session-focus" id="sessionFocus">Jambes · poussée · stabilité</p>
+      <div class="session-tabs" aria-label="Choisir une séance">
+        <button class="tab active" data-session="A" type="button">A</button><button class="tab" data-session="B" type="button">B</button><button class="tab" data-session="C" type="button">C</button>
+      </div>
+      <div class="settings"><span>Séries par exercice</span><div class="segmented"><button class="choice" data-sets="2" type="button">2</button><button class="choice active" data-sets="3" type="button">3</button></div></div>
+      <ol class="exercise-list" id="exerciseList"></ol>
+      <button class="primary" id="startButton" type="button">Démarrer la séance <span aria-hidden="true">→</span></button>
+      <section class="warmup-section" aria-labelledby="warmupTitle">
+        <p class="eyebrow" id="warmupTitle">ÉCHAUFFEMENTS</p>
+        <a class="warmup-card" href="warmup.html?plan=doux&v=20261011"><span class="warmup-card-icon" aria-hidden="true">◌</span><span><strong>Mobilité douce</strong><small>5 min · matin ou avant la muscu</small></span><span class="warmup-card-arrow" aria-hidden="true">→</span></a>
+        <a class="warmup-card" href="warmup.html?plan=tennis&v=20261011"><span class="warmup-card-icon" aria-hidden="true">↔</span><span><strong>Avant le tennis</strong><small>8 min · appuis et mobilité progressive</small></span><span class="warmup-card-arrow" aria-hidden="true">→</span></a>
+        <p class="warmup-section-note">Tu peux les faire indépendamment des séances A, B et C.</p>
+      </section>
+      <button class="sound-test" id="soundTest" type="button">Tester l’alarme de fin de pause</button>
+      <p class="sound-status" id="soundStatus" aria-live="polite"></p>
+      <p class="alarm-note">Garde la page ouverte pendant la séance : le mode silencieux et l’écran verrouillé peuvent bloquer le son.</p>
+      <p class="home-note">Un jour sans muscu, la mobilité douce reste disponible ici.</p>
+      <p class="media-credit">Vidéos de démonstration : Mixkit et Pexels.</p>
+    </section>
+    <section class="workout hidden" id="workout"></section>
+  </main>
+  <script src="app.js?v=20261011b" defer></script>
+</body>
+</html>
